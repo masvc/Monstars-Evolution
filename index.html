@@ -17,9 +17,33 @@
       <div class="headerbox">Monstars Evolution</div>
     </header>
     <div id="monster"></div>
+    <div id="monster-status">
+      <div class="status-bar">
+        <div class="happiness-meter"></div>
+      </div>
+      <div class="status-text">
+        ごきげん度: <span id="happiness-value">100</span>%
+      </div>
+    </div>
     <div id="counter">Lv. 0</div>
-    <button id="feedButton">餌を与える</button>
-    <button id="resetButton">リセット</button>
+    <!-- 統計情報パネルを追加 -->
+    <div id="stats-panel" class="stats-panel">
+      <h3>📊 統計情報</h3>
+      <p>総餌やり回数: <span id="total-feeds">0</span></p>
+      <p>進化回数: <span id="evolution-count">0</span></p>
+      <p>プレイ時間: <span id="play-time">0</span>分</p>
+    </div>
+    <div id="buttonbox">
+      <button id="feedButton">餌を与える</button>
+      <button id="resetButton">リセット</button>
+    </div>
+    <!-- アチーブメント通知用の要素を追加 -->
+    <div id="achievement-popup" class="achievement-popup">
+      <div class="achievement-content">
+        <h3>🏆 実績解除!</h3>
+        <p id="achievement-text"></p>
+      </div>
+    </div>
     <footer><div class="footerbox">©️️ masyo.eth</div></footer>
     <script src="script.js"></script>
   </body>
